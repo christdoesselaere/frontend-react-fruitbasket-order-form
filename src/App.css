@@ -1,0 +1,210 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: orangered;
+    width: 100%;
+}
+
+header img {
+    width: 97%;
+    max-width: 622px;
+    margin: 10px 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    background-color: yellowgreen;
+    width: 100%;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    width: 601px;
+    margin: 10px 0;
+}
+
+.cart-component {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.counter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.count-button {
+    font-size: 20px;
+    height: 36px;
+    width: 36px;
+    margin: 0 15px;
+}
+
+.count-number {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    width: 10px;
+}
+
+.reset-button {
+    font-size: 24px;
+    height: 60px;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.reset-button:hover {
+    background-color: darkseagreen;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: hsl(80, 61%, 65%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    width: 600px;
+    padding: 20px 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+form > h3 {
+    display: flex;
+    justify-content: flex-start;
+    width: 85%;
+}
+
+fieldset {
+    all: unset;
+}
+
+.customer-details {
+    display: flex;
+    flex-direction: column;
+    width: 474px;
+    font-size: 20px;
+}
+
+.customer-details input {
+    width: 200px;
+}
+
+/* Removes selection arrows in numbers input field (Chrome, Edge, Safari, Opera) */
+.customer-details input::-webkit-outer-spin-button,
+.customer-details input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Removes selection arrows in numbers input field (Firefox) */
+.customer-details input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#form-zipcode {
+    text-transform: uppercase;
+}
+
+.customer-details label {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.delivery-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 0 20px 0;
+}
+
+fieldset div {
+    display: flex;
+    flex-direction: column;
+}
+
+#custom-delivery {
+    width: 200px;
+    margin: 0 0 0 20px;
+}
+
+.delivery-details textarea {
+    font-size: 15px;
+    min-width: 220px;
+    max-width: 220px;
+    height: 80px;
+    min-height: 80px;
+}
+
+.send-button {
+    font-size: 24px;
+    height: 40px;
+    padding: 0 10px;
+    margin: 20px 0 0 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    outline: black;
+}
+
+.send-button:hover {
+    background-color: darkseagreen;
+}
+
+.send-button::selection {
+    border-radius: 10px;
+}
+
+.error-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0 0 0;
+}
+
+.error-message::before{
+    content: "⚠ ";
+}
+
+.error-message {
+    font-size: 12px;
+    color: red;
+    margin: 0;
+}
